@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exo2</title>
+</head>
+<body>
+  <canvas style="background-color:blue;" id="canvas" width="400" height="400">
+  </canvas>
+  <script>
+  var c = document.getElementById("canvas");
+  var ctx = c.getContext("2d");
+  //cockpit
+  ctx.beginPath();
+  ctx.fillStyle = "white";
+  ctx.moveTo(170,200);
+  ctx.quadraticCurveTo(200,100,230,200);
+  ctx.fill();
+  //premier arc de cercle de la soucoupe (supérieur)
+  ctx.beginPath();
+  ctx.fillStyle = "grey";
+  ctx.moveTo(100,200);
+  ctx.quadraticCurveTo(200,150,300,200);
+  ctx.fill();
+  //Deuxième arc de cercle de la soucoupe (inférieur)
+  ctx.beginPath();
+  ctx.fillStyle = "grey";
+  ctx.moveTo(100,200);
+  ctx.quadraticCurveTo(200,250,300,200);
+  ctx.fill();
+  </script>
+</body>
+</html>
